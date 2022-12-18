@@ -10,7 +10,7 @@
         "timer": "",
         "winHide": false,
         "oldrc": false,
-        "name": "",
+        "name": "Test Node",
         "x": 970,
         "y": 140,
         "wires": [
