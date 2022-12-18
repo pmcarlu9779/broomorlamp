@@ -1,0 +1,137 @@
+[
+    {
+        "id": "4456c3a60dc9efbe",
+        "type": "exec",
+        "z": "b1a59217744d0571",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 970,
+        "y": 140,
+        "wires": [
+            [
+                "646b49cd4c6138ea"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f06ec72c05bb97a4",
+        "type": "inject",
+        "z": "b1a59217744d0571",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "node  -v",
+        "payloadType": "str",
+        "x": 730,
+        "y": 120,
+        "wires": [
+            [
+                "4456c3a60dc9efbe"
+            ]
+        ]
+    },
+    {
+        "id": "646b49cd4c6138ea",
+        "type": "debug",
+        "z": "b1a59217744d0571",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "2cfbfc2369cfe93d",
+        "type": "inject",
+        "z": "b1a59217744d0571",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "npm -v",
+        "payloadType": "str",
+        "x": 730,
+        "y": 180,
+        "wires": [
+            [
+                "4456c3a60dc9efbe"
+            ]
+        ]
+    },
+    {
+        "id": "03d87e5376713561",
+        "type": "inject",
+        "z": "b1a59217744d0571",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "sudo apt update",
+        "payloadType": "str",
+        "x": 740,
+        "y": 240,
+        "wires": [
+            [
+                "4456c3a60dc9efbe"
+            ]
+        ]
+    },
+    {
+        "id": "47567496ef5ea0f1",
+        "type": "comment",
+        "z": "b1a59217744d0571",
+        "name": "run cmd commands ",
+        "info": "",
+        "x": 750,
+        "y": 80,
+        "wires": []
+    }
+]
